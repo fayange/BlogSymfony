@@ -1,0 +1,34 @@
+{#
+	src/BlogBundle/Resources/views/Hello/article.html.twig
+	webDev - 2017
+	Variables exposées :
+		$id => Identifiant défini par la route, et transmis par voirAction()
+#}
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		
+		<title>Visualiser l'article : {{ id }}</title>
+		
+	</head>
+	
+	<body>
+		<header>
+			<h1>Un article</h1>
+		</header>
+		
+		<main>
+			<article data-id="{{ id }}">
+				<header>
+					<h2>Titre de l'article {{ id }}</h2>
+				</header>
+			</article>
+		</main>
+		
+		<footer>
+			Powered by Symfony 2.8
+		</footer>
+	</body>
+</html>

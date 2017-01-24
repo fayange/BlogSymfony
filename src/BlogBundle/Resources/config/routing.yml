@@ -1,0 +1,9 @@
+blog_homepage:
+    path:     /
+    defaults: { _controller: BlogBundle:Default:index }
+blog_hello:
+    path:     /hello-word
+    defaults: { _controller: BlogBundle:Blog:index }
+blog_voir:
+    path:   /blog/post/{id}
+    defaults: { _controller: BlogBundle:Blog:voir }
