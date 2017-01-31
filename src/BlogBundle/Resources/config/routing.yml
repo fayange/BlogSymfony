@@ -7,3 +7,10 @@ blog_hello:
 blog_voir:
     path:   /blog/post/{id}
     defaults: { _controller: BlogBundle:Blog:voir }
+blog_ajouter:
+    path:   /blog/ajouter
+    defaults: { _controller: BlogBundle:Blog:ajouter }
+blog_article:
+    path:   /blog/article
+    defaults: { _controller: BlogBundle:Blog:article }
+

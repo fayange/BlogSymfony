@@ -1,0 +1,26 @@
+{% extends 'MenuBundle:Menu:baseMenu.html.twig' %}
+{% block title %}Accueil MENU - {% endblock %}
+
+{#si on veux récupérer le parent#}
+{#{% block title %}{% parent % Acceuil MENU - {% endblock %}#}
+
+
+{% block body %}
+    <div class="container">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci cumque deserunt distinctio ducimus eos eum expedita explicabo facilis hic illo ipsum iure minima molestias mollitia nemo nobis nostrum numquam odio odit placeat, qui quia quis rerum similique sit sunt, suscipit, tenetur! Architecto at beatae cum dicta ipsa ipsum, laborum maxime nam obcaecati officiis optio provident quia similique sint voluptate. Adipisci aliquam atque autem corporis cumque ducimus ea eaque eius ex fuga fugiat harum ipsa itaque maiores minima modi molestias necessitatibus nobis numquam officiis, pariatur porro quaerat quas qui quo ratione sequi similique sint tempora ullam ut vel veniam voluptatum. Debitis.
+    <br>
+        <br>
+    <div>
+        <p>
+            <a href="{{ path("blog_article") }}">Voir tous les articles</a>
+
+            <br>
+
+            <a href="{{ path("blog_article") }}">Voir les 5 derniers articles</a>
+
+
+        </p>
+
+    </div>
+    </div>
+{% endblock %}

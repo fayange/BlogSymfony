@@ -1,0 +1,15 @@
+menu_homepage:
+    path:     /
+    defaults: { _controller: MenuBundle:Default:index}
+menu_contacts:
+    path:     /menu/contacts
+    defaults: { _controller: MenuBundle:Menu:contacts }
+menu_base:
+    path:     /menu/baseMenu
+    defaults: { _controller: MenuBundle:Menu:baseMenu }
+display_menu:
+    path:     /menu
+    defaults: { _controller: MenuBundle:Menu:index }
+menu_footer:
+        path:     /menu/footer
+        defaults: { _controller: MenuBundle:Menu:footer}

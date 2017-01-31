@@ -1,0 +1,90 @@
+fieldset {
+    border: 2px groove #ddd !important;
+    padding: 0 1.4em 1.4em 1.4em !important;
+    margin: 0 0 1.5em 0 !important;
+    box-shadow: 0 0  #000;
+}
+
+legend.scheduler-border {
+    font-size: 1.7em;
+    width: inherit;
+    height: auto;
+    /* Or auto */
+    padding: 0 10px;
+    /* To give a bit of padding on the left and right */
+
+}
+legend{
+    border-width: 0 0!important;
+    border-bottom: none;
+    margin-left: 60px;
+    margin-top: 16px;
+    padding-left: 20px;
+    width: 200px;
+}
+.carousel-caption{
+    padding-top: 43px!important;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5%;
+    top:300px;
+    height:350px;
+}
+.carousel-caption p{
+    color:white;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.carousel-indicators{
+    top:580px;
+}
+form{
+    margin-top:15% ;
+}
+.ajout{
+    margin-top: 10%;
+}
+.navbar,
+.navbar li a {
+    font-size: 1.9rem;
+}
+.container-fluid{
+    margin: 0;
+    padding: 0;
+}
+.nav-pills > li > a {
+    color:gray;
+    font-size:1.4rem;
+    font-weight: bold;
+}
+.nav-pills > li > a:hover,
+.nav-pills > li > a:focus {
+    color:white;
+    background: transparent;
+    font-weight: bold;
+
+}
+a{
+    color:gray;
+}
+a:hover,
+a:focus{
+    color:white;
+    text-align: center;
+    font-size:1.4rem;
+}
+
+.nav-pills > li,
+.nav-pills > ul,
+.nav-pills > ol,
+ul ul,
+.nav{
+    text-align: center;
+    list-style-type: none!important;
+    text-decoration: none;
+
+}
+
+ul ul{
+    padding-left: 0;
+}
+

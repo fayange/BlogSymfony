@@ -4,31 +4,137 @@
 	Variables exposées :
 		$id => Identifiant défini par la route, et transmis par voirAction()
 #}
-<!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		
-		<title>Visualiser l'article : {{ id }}</title>
-		
-	</head>
-	
-	<body>
+{% extends 'base.html.twig' %}
+{% block title %}Visualiser l'article : {{ id }} : {{ action }}{% endblock %}
+
+{% block body %}
+
+	<div class="container">
 		<header>
-			<h1>Un article</h1>
+			<h1>Les nouveaux articles </h1>
 		</header>
-		
+		<br>
+		<br>
 		<main>
-			<article data-id="{{ id }}">
-				<header>
-					<h2>Titre de l'article {{ id }}</h2>
-				</header>
-			</article>
+	<div class="row">
+		<article data-id="{{ id }}">
+			<div class="col-sm-6 col-md-4">
+				<div class="thumbnail">
+					<br>
+					<img src="{{ asset ('images/3.jpg') }}" alt="image3">
+					<div class="caption">
+						<h3>Titre de l'article {{ id }} </h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At inventore iusto, molestiae nihil nulla possimus quo recusandae sapiente unde voluptas! Assumenda debitis impedit magni possimus quidem quis sunt voluptatum? Minima nemo perferendis suscipit! Ad adipisci, dicta esse fugit ipsam laboriosam laborum nesciunt nobis nulla obcaecati officiis optio, possimus quasi quia totam, vero voluptates! Accusamus beatae earum eius eos impedit incidunt laborum magnam mollitia, perferendis placeat. </p>
+						<br>
+						<footer>
+							<p>Auteur : {{ auteur }}</p>
+							<p>Lien vers l'ajout : <a href="{{ url }}">Nouvel article</a></p>
+						</footer>
+						<br>
+						<p align="right"><a href="#" class="btn btn-primary" role="button">En savoir plus </a> <a href="{{ path('menu_contacts') }}" class="btn btn-default" role="button">Contact</a></p>
+					</div>
+				</div>
+			</div>
+		</article>
+		<article data-id="{{ id }}">
+			<div class="col-sm-6 col-md-4">
+				<div class="thumbnail">
+					<br>
+					<img src="{{ asset ('images/4.jpg') }}" alt="image3">
+					<div class="caption">
+						<h3>Titre de l'article {{ id }} </h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At inventore iusto, molestiae nihil nulla possimus quo recusandae sapiente unde voluptas! Assumenda debitis impedit magni possimus quidem quis sunt voluptatum? Minima nemo perferendis suscipit! Ad adipisci, dicta esse fugit ipsam laboriosam laborum nesciunt nobis nulla obcaecati officiis optio, possimus quasi quia totam, vero voluptates! Accusamus beatae earum eius eos impedit incidunt laborum magnam mollitia, perferendis placeat. </p>
+						<br>
+						<footer>
+							<p>Auteur : {{ auteur }}</p>
+							<p>Lien vers l'ajout : <a href="{{ url }}">Nouvel article</a></p>
+						</footer>
+						<br>
+						<p align="right"><a href="#" class="btn btn-primary" role="button">En savoir plus </a> <a href="{{ path('menu_contacts') }}" class="btn btn-default" role="button">Contact</a></p>
+					</div>
+				</div>
+			</div>
+		</article>
+		<article data-id="{{ id }}">
+			<div class="col-sm-6 col-md-4">
+				<div class="thumbnail">
+					<br>
+					<img src="{{ asset ('images/5.jpg') }}" alt="image3">
+					<div class="caption">
+						<h3>Titre de l'article {{ id }} </h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At inventore iusto, molestiae nihil nulla possimus quo recusandae sapiente unde voluptas! Assumenda debitis impedit magni possimus quidem quis sunt voluptatum? Minima nemo perferendis suscipit! Ad adipisci, dicta esse fugit ipsam laboriosam laborum nesciunt nobis nulla obcaecati officiis optio, possimus quasi quia totam, vero voluptates! Accusamus beatae earum eius eos impedit incidunt laborum magnam mollitia, perferendis placeat. </p>
+						<br>
+						<footer>
+							<p>Auteur : {{ auteur }}</p>
+							<p>Lien vers l'ajout : <a href="{{ url }}">Nouvel article</a></p>
+						</footer>
+						<br>
+						<p align="right"><a href="#" class="btn btn-primary" role="button">En savoir plus </a> <a href="{{ path('menu_contacts') }}" class="btn btn-default" role="button">Contact</a></p>
+					</div>
+				</div>
+			</div>
+		</article>
+	</div>
+	<div class="row">
+		<article data-id="{{ id }}">
+			<div class="col-sm-6 col-md-4">
+				<div class="thumbnail">
+					<br>
+					<img src="{{ asset ('images/3.jpg') }}" alt="image3">
+					<div class="caption">
+						<h3>Titre de l'article {{ id }} </h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At inventore iusto, molestiae nihil nulla possimus quo recusandae sapiente unde voluptas! Assumenda debitis impedit magni possimus quidem quis sunt voluptatum? Minima nemo perferendis suscipit! Ad adipisci, dicta esse fugit ipsam laboriosam laborum nesciunt nobis nulla obcaecati officiis optio, possimus quasi quia totam, vero voluptates! Accusamus beatae earum eius eos impedit incidunt laborum magnam mollitia, perferendis placeat. </p>
+						<br>
+						<footer>
+							<p>Auteur : {{ auteur }}</p>
+							<p>Lien vers l'ajout : <a href="{{ url }}">Nouvel article</a></p>
+						</footer>
+						<br>
+						<p align="right"><a href="#" class="btn btn-primary" role="button">En savoir plus </a> <a href="{{ path('menu_contacts') }}" class="btn btn-default" role="button">Contact</a></p>
+					</div>
+				</div>
+			</div>
+		</article>
+		<article data-id="{{ id }}">
+			<div class="col-sm-6 col-md-4">
+				<div class="thumbnail">
+					<br>
+					<img src="{{ asset ('images/4.jpg') }}" alt="image3">
+					<div class="caption">
+						<h3>Titre de l'article {{ id }} </h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At inventore iusto, molestiae nihil nulla possimus quo recusandae sapiente unde voluptas! Assumenda debitis impedit magni possimus quidem quis sunt voluptatum? Minima nemo perferendis suscipit! Ad adipisci, dicta esse fugit ipsam laboriosam laborum nesciunt nobis nulla obcaecati officiis optio, possimus quasi quia totam, vero voluptates! Accusamus beatae earum eius eos impedit incidunt laborum magnam mollitia, perferendis placeat. </p>
+						<br>
+						<footer>
+							<p>Auteur : {{ auteur }}</p>
+							<p>Lien vers l'ajout : <a href="{{ url }}">Nouvel article</a></p>
+						</footer>
+						<br>
+						<p align="right"><a href="#" class="btn btn-primary" role="button">En savoir plus </a> <a href="{{ path('menu_contacts') }}" class="btn btn-default" role="button">Contact</a></p>
+					</div>
+				</div>
+			</div>
+		</article>
+		<article data-id="{{ id }}">
+			<div class="col-sm-6 col-md-4">
+				<div class="thumbnail">
+					<br>
+					<img src="{{ asset ('images/5.jpg') }}" alt="image3">
+					<div class="caption">
+						<h3>Titre de l'article {{ id }} </h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At inventore iusto, molestiae nihil nulla possimus quo recusandae sapiente unde voluptas! Assumenda debitis impedit magni possimus quidem quis sunt voluptatum? Minima nemo perferendis suscipit! Ad adipisci, dicta esse fugit ipsam laboriosam laborum nesciunt nobis nulla obcaecati officiis optio, possimus quasi quia totam, vero voluptates! Accusamus beatae earum eius eos impedit incidunt laborum magnam mollitia, perferendis placeat. </p>
+						<br>
+						<footer>
+							<p>Auteur : {{ auteur }}</p>
+							<p>Lien vers l'ajout : <a href="{{ url }}">Nouvel article</a></p>
+						</footer>
+						<br>
+						<p align="right"><a href="#" class="btn btn-primary" role="button">En savoir plus </a> <a href="{{ path('menu_contacts') }}" class="btn btn-default" role="button">Contact</a></p>
+					</div>
+				</div>
+			</div>
+		</article>
+	</div>
 		</main>
-		
-		<footer>
-			Powered by Symfony 2.8
-		</footer>
-	</body>
-</html>
+	</div>
+
+{% endblock %}

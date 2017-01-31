@@ -11,6 +11,6 @@ class DefaultController extends Controller
      */
     public function indexAction()
     {
-        return $this->render('BlogBundle:Default:index.html.twig');
+        return $this->render(':default:index.html.twig');
     }
 }

@@ -1,0 +1,37 @@
+{#
+	src/BlogBundle/Resources/views/Hello/ajouter.html.twig
+	webDev - 2017
+	Variables exposées :
+		$date => Date du jour avec l'heure courante
+#}
+{% extends 'BlogBundle:Hello:article.html.twig' %}
+{% block title %}Ajout d'un article{% endblock %}
+{% block body %}
+    <div class="container ajout">
+    <header>
+        <h1>Un article a été ajouté {{ date }}</h1>
+    </header>
+
+    <div class="dismiss flash">
+        {% for info in app.session.flashbag.get("info") %}
+            <p>{{ info }}</p>
+        {% endfor %}
+    </div>
+    <br>
+    <br>
+    <blockquote>
+        <p>Titre : {{ article.getTitre() }}</p>
+        <p>Auteur : {{ article.getauteur() }}</p>
+        <p>Date : {{ article.getdate() | date ('d-m-Y h:i')}}</p>
+        <p>{{ article.getcontenu() }}</p>
+        <p>{{ article.getPublication }}</p>
+    </blockquote>
+    <br>
+    <br>
+    <footer>
+        Powered by Symfony 2.8
+    </footer>
+        <br>
+        <br>
+    </div>
+{% endblock %}
